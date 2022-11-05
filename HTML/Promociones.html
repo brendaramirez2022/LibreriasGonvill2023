@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librerías</title>
+    <!--Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="../CSS/Index.css">
+    <!-- Enlace de boostrap para que el carrusel funcione-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <!-- Enlace para poner iconos de la pagina font awesome
+    https://fontawesome.com/v4/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Enlace de script para usar sweet alert o ventanas emergentes predisenadas
+    https://sweetalert.js.org/guides/ -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Enlace al script para usar funciones de validacion -->
+    <script src="./JS/Login.js"></script>
+</head>
+<body>
+
+    <div class="encabezado">
+        <div class="nav">
+          <!-- Bloque que ayuda a la responsividad
+            cuando la pantalla se reduce, cambia el manu 
+          a un cuadrado con barras -->
+            <h1>Librerías <br>   Gonvill<br></h1>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <!-- Primera fila de la Barra de navegacion
+            se usan iconos referentes a la opcion
+          se puede cambiar buscando un icono en font-awesome -->
+            <ul class="menu-box">
+                <li><a href="../index.html" class="fa fa-home"> Inicio</a></li>
+                <li><a href="Libros.html" class="fa fa-book"> Libros</a></li>
+                <li><a href="LibrosElectronicos.html" class="fa fa-laptop"> Libros electrónicos</a></li>
+                <li><a href="AudioLibros.html" class="fa fa-headphones" > Audio libros</a></li>
+                <li><a href="Descuentos.html" class="fa fa-list-alt"> Descuentos</a></li>
+                <li><a href="Ubicaciones.html" class="fa fa-map-marker"> Ubicaciones</a></li>                                
+            </ul>     
+        </div>        
+    </div>
+    <div class="filad">
+            <!-- Segunda fila de la Barra de navegacion
+            se encuentra el boton de iniciar sesion y 
+            y el boton para buscar -->
+        <a href="Login.html" class="fa fa-sign-in" id="boton">  INICIAR SESIÓN </a> 
+        <div class="buscar">
+            <input type="text" placeholder="BUSCAR" required />         
+            <div class="boton1">
+              <i class="fa fa-search "></i>
+            </div>
+        </div>
+    </div> 
+    <!-- Politica de envio de Gonvill -->
+    <div class="envio">
+        <div class="politicas">
+        <br>
+        <hr>
+        <h2>Políticas de envío </h2>
+        <hr>
+        <p style="text-align:justify">Actualmente contamos con dos servicios de envíos nacionales:</p>
+        <p style="text-align:justify"><strong>Nacional Estándar Estafeta</strong> que tiene un tiempo aproximado de entrega de 4 a 10 días hábiles a partir de la confirmación y acreditación del pago de su orden. El costo de la paquetería dependerá del número de libros en su orden e inicia a partir de $90.00 iva incluido y ampara de 1 a 5 libros, adicionalmente por el 6 ejemplar en delante, el costo de la paquetería se incrementara en $8.00 por ejemplar adicional.</p>
+        <p style="text-align:justify">Las promociones de <strong>ENVIOS GRATIS</strong> se realizan por medio de Estafeta con su servicio Estándar y no aplica para ventas especiales o dirigidas como SchoolShop. Y solo son valida en envíos dentro de la República Mexicana.</p>
+        <p style="text-align:justify">Y</p>
+        <p style="text-align:justify"><strong>Estafeta Agilizado o FedEX</strong>que tiene untiempo  aproximado de entrega de 2 a 9 días hábiles a partir de la confirmación y acreditación del pago de su orden. El costo de la paquetería dependerá del número de libros en su orden e inicia a partir de $98.00 iva incluido y ampara de 1 a 5 libros, adicionalmente por el 6 ejemplar en delante, el costo de la paquetería se incrementara en $7.00 por ejemplar adicional. El tiempo de entrega no aplica para localidades con servicios adicionales, reexpediciones, ocurre oficina o que se encuentre fuera de la cobertura. </p>
+        <p style="text-align:justify">*El tiempo entrega y servicio puede variar dependiendo de la localidad del envío. Todo nuestros paquetes se embarcan desde el código postal 44190.</p>
+        <p style="text-align:justify">*Si la localidad no cuenta con servicio a domicilio y solo se ofrece Ocurre Oficina se le notificara al momento de realizar la guía para que pueda tomarlo en cuenta.</p>
+        <p style="text-align:justify">*La paqueter&iacute;a realiza dos intentos de entrega en el domicilio en caso de no encontrar al destinatario el paquete es colocado un tiempo en la oficina más cercana, en caso de no reclamarlo el paquete puede ser destruido o en ocasiones ser devuelto a nuestras oficinas en este último caso será necesario contáctanos para reclamarlo.</p>
+        <p style="text-align:justify">* Los servicios de paquetería que manejamos son de puerta a puerta y no enviamos a P.O. Box.</p>
+        <p style="text-align:justify">Para rastrear su envío por medio de Estafeta haga <a href="http://www.estafeta.com/herramientas/rastreo.aspx" target="_blank"><strong>clic aquí</strong></a> o en su defecto por medio de FedEx<a href="https://www.fedex.com/apps/fedextrack/?action=track&amp;cntry_code=mx" target="_blank"><strong>clic aquí</strong></a> y teclee el número de guía.</p>
+        <p style="text-align:center"><br />
+        Librerías Gonvill se reserva el derecho de cambiar los servicios y costos aplicables en cualquier momento y sin previo aviso. Las tarifas incluyen IVA.</p>
+        <p>Envíos nacionales realizados por: FedEX o Estafeta</p>         
+        <p><strong>ENVÍOS AL RESTO DEL MUNDO.</strong></p>
+        <p>El costo de la paquetería dependerá del número de libros en su pedido.</p>
+        <p>Para rastrear su envío con Fedex haga <a href="http://www.fedex.com/" target="_blank"><strong>clic aquí;</strong></a>.</p>
+
+        </div>
+    </div>
+
+           <!-- Pie de pagina -->
+       <footer>
+        <ul class="social_icon">
+            <!-- Iconos de redes sociales mas populares, al presionarlo redirige a 
+                la cuenta de Librerias Gonvill -->
+            <li><a href="https://www.facebook.com/LibreriasGonvill"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/libreriasgonvill/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.youtube.com/user/GonvillLibros/videos"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="https://twitter.com/GonvillLibros"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <!-- Menu de navegacion inferior -->
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="Ubicaciones.html">Ubicación</a></li>
+            <li><a href="Descuentos.html">Descuentos</a></li>
+            <li><a href="Login.html">Beneficios</a></li>
+            <li><a href="Promociones.html">Política</a></li>
+        </ul>
+        <p>© 2022 Brenda Ramírez || Todos los derechos reservados</p>
+    </footer>
+    <!-- Enlace de script para hacer uso de los iconos de redes sociales -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

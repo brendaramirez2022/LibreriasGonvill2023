@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librerías</title>
+    <!--Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="../CSS/Index.css">
+    <!-- Enlace de boostrap para que el carrusel funcione-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <!-- Enlace para poner iconos de la pagina font awesome
+    https://fontawesome.com/v4/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Enlace de script para usar sweet alert o ventanas emergentes predisenadas
+    https://sweetalert.js.org/guides/ -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Enlace al script para usar funciones de validacion -->
+    <script src="./JS/Login.js"></script>
+</head>
+<body>
+
+    <div class="encabezado">
+        <div class="nav">
+          <!-- Bloque que ayuda a la responsividad
+            cuando la pantalla se reduce, cambia el manu 
+          a un cuadrado con barras -->
+            <h1>Librerías <br>   Gonvill<br></h1>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <!-- Primera fila de la Barra de navegacion
+            se usan iconos referentes a la opcion
+          se puede cambiar buscando un icono en font-awesome -->
+            <ul class="menu-box">
+                <li><a href="../index.html" class="fa fa-home"> Inicio</a></li>
+                <li><a href="Libros.html" class="fa fa-book"style="background-color:#008080;border-bottom: solid .2rem var(--secundary);                  border-radius: 0.3rem;
+                  text-decoration: none;"> Libros</a></li>
+                <li><a href="LibrosElectronicos.html" class="fa fa-laptop"> Libros electrónicos</a></li>
+                <li><a href="AudioLibros.html" class="fa fa-headphones"> Audio libros</a></li>
+                <li><a href="Descuentos.html" class="fa fa-list-alt"> Descuentos</a></li>
+                <li><a href="Ubicaciones.html" class="fa fa-map-marker"> Ubicaciones</a></li>                                
+            </ul>     
+        </div>        
+    </div>
+    <div class="filad">
+            <!-- Segunda fila de la Barra de navegacion
+            se encuentra el boton de iniciar sesion y 
+            y el boton para buscar -->
+        <a href="Login.html" class="fa fa-sign-in" id="boton">  INICIAR SESIÓN </a> 
+        <div class="buscar">
+            <input type="text" placeholder="BUSCAR" required />         
+            <div class="boton1">
+              <i class="fa fa-search "></i>
+            </div>
+        </div>
+    </div>   
+    <!-- Encabezado con dos lineas superior-inferior -->
+    <div class="politicas">
+        <hr>
+          <h2>LIBROS </h2>
+        <hr>
+      </div>
+      <!-- Primera seccion -->
+          <!-- Fila 1 -->
+          <!-- Se muestran los libros en existencia con la informacion
+            basica de cada uno de ellos -->
+      <div class="politicas">
+        <hr>
+          <h2>Infantiles </h2>
+        <hr>
+      </div>
+      <div class="contenedor-tarjeta">
+        <div class="tarjeta">
+          <figure>
+            <img src="../Img/Infantiles1.png">
+          </figure>
+          <div class="contenido-tarjeta">
+            <h3>Gran Plan</h3>
+            <p>SCOTT DREW</p>
+            <br>
+            <p><strong>$420</strong></p>
+            <a href="#">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta" >
+          <figure>
+            <img src="../Img/Infantiles2.png">
+          </figure>
+          <div class="contenido-tarjeta">
+            <h3>Frozen II</h3>
+            <p>DISNEY</p>
+            <br>
+            <p><strong>$399</strong></p>
+            <a href="#">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <figure>
+            <img src="../Img/Infantiles3.png">
+          </figure>
+          <div class="contenido-tarjeta">
+            <h3>Dominar el Mundo</h3>
+            <p>BEGOÑA ORO</p>
+            <p><strong>$299</strong></p>
+            <a href="#">Comprar</a>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <figure>
+            <img src="../Img/Infantiles4.png">
+          </figure>
+          <div class="contenido-tarjeta">
+            <h3>Stencil fun: Animales</h3>
+            <p>MANOLITO BOOKS</p>
+            <p><strong>$399</strong></p>
+            <a href="#">Comprar</a>
+          </div>
+        </div>
+        <div class="tarjeta">
+            <figure>
+              <img src="../Img/Infantiles5.png">
+            </figure>
+            <div class="contenido-tarjeta">
+              <h3>Barco Pirata</h3>
+              <p>TOM HEARD</p>
+              <br>
+              <p><strong>$399</strong></p>
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+
+    </div>
+
+    <!-- Fila 2 -->
+      </div>
+      <div class="contenedor-tarjeta">
+        <div class="tarjeta">
+          <figure>
+            <img src="../Img/Infantiles6.png">
+          </figure>
+          <div class="contenido-tarjeta">
+            <h3>Aventura Animal</h3>
+            <p>MANOLITO BOOKS</p>
+            <p><strong>$400</strong></p>
+            <a href="#">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta" >
+          <figure>
+            <img src="../Img/Infantiles7.png">
+          </figure>
+          <div class="contenido-tarjeta">
+            <h3>El Poder del NO</h3>
+            <p>MARIA INES BALBIN</p>
+            <p><strong>$399</strong></p>
+            <a href="#">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <figure>
+            <img src="../Img/Infantiles8.png">
+          </figure>
+          <div class="contenido-tarjeta">
+            <h3>Coco</h3>
+            <p>DISNEY</p>
+            <br>
+            <p><strong>$199</strong></p>
+            <a href="#">Comprar</a>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <figure>
+            <img src="../Img/Infantiles9.png">
+          </figure>
+          <div class="contenido-tarjeta">
+            <h3>La Isla del Tesoro</h3>
+            <p>VARIOS</p>
+            <p><strong>$369</strong></p>
+            <a href="#">Comprar</a>
+          </div>
+        </div>
+        <div class="tarjeta">
+            <figure>
+              <img src="../Img/Infantiles10.png">
+            </figure>
+            <div class="contenido-tarjeta">
+              <h3>El Cuaderno de Desafíos</h3>
+              <p>COHN RACHEL</p>
+              <p><strong>$299</strong></p>
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+
+    </div>
+    <!-- Segunda seccion -->
+             <!-- Fila 1 -->
+             <div class="politicas">
+                <hr>
+                  <h2>Juveniles</h2>
+                <hr>
+              </div>
+              <div class="contenedor-tarjeta">
+                <div class="tarjeta">
+                  <figure>
+                    <img src="../Img/Libro1.png">
+                  </figure>
+                  <div class="contenido-tarjeta">
+                    <h3>Un Cadáver en la Biblioteca</h3>
+                    <p>CHRISTIE AGATHA</p>
+                    <br>
+                    <p><strong>$220</strong></p>
+                    <a href="#">Comprar</a>
+                  </div>
+                </div>
+        
+                <div class="tarjeta" >
+                  <figure>
+                    <img src="../Img/Libro2.png">
+                  </figure>
+                  <div class="contenido-tarjeta">
+                    <h3>Historias de una Pandemia</h3>
+                    <p>MORENO PACO</p>
+                    <br>
+                    <p><strong>$329</strong></p>
+                    <a href="#">Comprar</a>
+                  </div>
+                </div>
+        
+                <div class="tarjeta">
+                  <figure>
+                    <img src="../Img/Libro3.png">
+                  </figure>
+                  <div class="contenido-tarjeta">
+                    <h3>Emocional</h3>
+                    <p>MLODINOW LEONARD</p>
+                    <br>
+                    <p><strong>$199</strong></p>
+                    <a href="#">Comprar</a>
+                  </div>
+                </div>
+                <div class="tarjeta">
+                  <figure>
+                    <img src="../Img/Libro4.png">
+                  </figure>
+                  <div class="contenido-tarjeta">
+                    <h3>Lo Último que me dijo</h3>
+                    <p>DAVE LAURA</p>
+                    <br>
+                    <p><strong>$199</strong></p>
+                    <a href="#">Comprar</a>
+                  </div>
+                </div>
+                <div class="tarjeta">
+                    <figure>
+                      <img src="../Img/Juvenil1.jpeg">
+                    </figure>
+                    <div class="contenido-tarjeta">
+                      <h3>Una Promesa Audaz y Mortal</h3>
+                      <p>BRIGID KEMMERER</p>
+                      
+                      <p><strong>$344</strong></p>
+                      <a href="#">Comprar</a>
+                    </div>
+                  </div>
+        
+            </div>
+        
+            <!-- Fila 2 -->
+              </div>
+              <div class="contenedor-tarjeta">
+                <div class="tarjeta">
+                  <figure>
+                    <img src="../Img/Juvenil2.jpeg">
+                  </figure>
+                  <div class="contenido-tarjeta">
+                    <h3>El Bosque de las Cosas Perdidas</h3>
+                    <p>SHREA ERNSHAW</p>
+                    <p><strong>$420</strong></p>
+                    <a href="#">Comprar</a>
+                  </div>
+                </div>
+        
+                <div class="tarjeta" >
+                  <figure>
+                    <img src="../Img/Juvenil3.jpeg">
+                  </figure>
+                  <div class="contenido-tarjeta">
+                    <h3>Alzar la Voz</h3>
+                    <p>ANA ISABEL CONEJO</p>
+                    <br><br>
+                    <p><strong>$399</strong></p>
+                    <a href="#">Comprar</a>
+                  </div>
+                </div>
+        
+                <div class="tarjeta">
+                  <figure>
+                    <img src="../Img/Juvenil4.jpeg">
+                  </figure>
+                  <div class="contenido-tarjeta">
+                    <h3>Guia Practica de Tik Tok</h3>
+                    <p>BEATRIZ IZNAOLA</p>
+                    <br>
+                    <p><strong>$299</strong></p>
+                    <a href="#">Comprar</a>
+                  </div>
+                </div>
+                <div class="tarjeta">
+                  <figure>
+                    <img src="../Img/Juvenil5.jpeg">
+                  </figure>
+                  <div class="contenido-tarjeta">
+                    <h3>Fake News</h3>
+                    <p>KAROLINE KUHLA</p>
+                    <br><br>
+                    <p><strong>$399</strong></p>
+                    <a href="#">Comprar</a>
+                  </div>
+                </div>
+                <div class="tarjeta">
+                    <figure>
+                      <img src="../Img/Juvenil6.jpeg">
+                    </figure>
+                    <div class="contenido-tarjeta">
+                      <h3>No Hay Verano Sin ti</h3>
+                      <p>JENNY HAN</p>
+                      <br>
+                      <p><strong>$399</strong></p>
+                      <a href="#">Comprar</a>
+                    </div>
+                  </div>
+        
+            </div>
+            <!-- Tercera seccion -->
+                     <!-- Fila 1 -->
+      <div class="politicas">
+        <hr>
+          <h2>Adultos </h2>
+        <hr>
+      </div>
+      <div class="contenedor-tarjeta">
+        <div class="tarjeta">
+          <figure>
+            <img src="../Img/Adultos1.jpeg">
+          </figure>
+          <div class="contenido-tarjeta">
+            <h3>La Guía Práctica Para Ser Feliz</h3>
+            <p>ELÁN</p>
+            <br>
+            <p><strong>$410</strong></p>
+            <a href="#">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta" >
+          <figure>
+            <img src="../Img/Adultos2.jpeg">
+          </figure>
+          <div class="contenido-tarjeta">
+            <h3>El Rey del Cash</h3>
+            <p>CHÁVEZ ELENA</p>
+            <br><br>
+            <p><strong>$399</strong></p>
+            <a href="#">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta">
+          <figure>
+            <img src="../Img/Adultos3.jpeg">
+          </figure>
+          <div class="contenido-tarjeta">
+            <h3>Como Hacer Que te Pasen Cosas Buenas</h3>
+            <p>ROJAS ESTAPÉ MARIAN</p>
+            <p><strong>$299</strong></p>
+            <a href="#">Comprar</a>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <figure>
+            <img src="../Img/Adultos4.jpeg">
+          </figure>
+          <div class="contenido-tarjeta">
+            <h3>Hábitos Atómicos</h3>
+            <p>CLEAR JAMES</p>
+            <br><br>
+            <p><strong>$339</strong></p>
+            <a href="#">Comprar</a>
+          </div>
+        </div>
+        <div class="tarjeta">
+            <figure>
+              <img src="../Img/Adultos5.jpeg">
+            </figure>
+            <div class="contenido-tarjeta">
+              <h3>Las 5 Heridas que Impiden Ser Uno Mismo</h3>
+              <p>BOURBEAU LISE</p>
+              
+              <p><strong>$789</strong></p>
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+
+    </div>
+
+    <!-- Fila 2 -->
+      </div>
+      <div class="contenedor-tarjeta">
+        <div class="tarjeta">
+          <figure>
+            <img src="../Img/Adultos6.jpeg">
+          </figure>
+          <div class="contenido-tarjeta">
+            <h3>Emma y las Otras Señoras del Narco</h3>
+            <p>HERNANDEZ ANABEL</p>
+            <br><br>
+            <p><strong>$890</strong></p>
+            <a href="#">Comprar</a>
+          </div>
+        </div>
+
+        <div class="tarjeta" >
+          <figure>
+            <img src="../Img/Adultos7.jpeg">
+          </figure>
+          <div class="contenido-tarjeta">
+            <h3>Cuando "Echarle Ganas" no es suficiente</h3>
+            <p>LOZANO CÉSAR</p>
+            <br>
+            <p><strong>$119</strong></p>
+            <a href="#">Comprar</a>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <figure>
+            <img src="../Img/Adultos8.jpeg">
+          </figure>
+          <div class="contenido-tarjeta">
+            <h3>Atrévete a Ser Quien Eres</h3>
+            <p>RISO WALTER</p>
+            <br><br><br>
+            <p><strong>$199</strong></p>
+            <a href="#">Comprar</a>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <figure>
+            <img src="../Img/Adultos9.jpeg">
+          </figure>
+          <div class="contenido-tarjeta">
+            <h3>Tiende Tu Cama Y Otros Pequeños Hábitos </h3>
+            <p>MCRAVEN WILLIAM H.</p>
+            <p><strong>$299</strong></p>
+            <a href="#">Comprar</a>
+          </div>
+        </div>
+        <div class="tarjeta">
+            <figure>
+              <img src="../Img/Adultos10.jpeg">
+            </figure>
+            <div class="contenido-tarjeta">
+              <h3>México en el Precipicio</h3>
+              <p>SCHETTINO, MACARIO</p>
+              <br><br>
+              <p><strong>$389</strong></p>
+              <a href="#">Comprar</a>
+            </div>
+          </div>
+
+    </div>
+
+       <!-- Pie de pagina -->
+       <footer>
+        <ul class="social_icon">
+            <!-- Iconos de redes sociales mas populares, al presionarlo redirige a 
+                la cuenta de Librerias Gonvill -->
+            <li><a href="https://www.facebook.com/LibreriasGonvill"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/libreriasgonvill/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.youtube.com/user/GonvillLibros/videos"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="https://twitter.com/GonvillLibros"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <!-- Menu de navegacion inferior -->
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="Ubicaciones.html">Ubicación</a></li>
+            <li><a href="Descuentos.html">Descuentos</a></li>
+            <li><a href="Login.html">Beneficios</a></li>
+            <li><a href="Promociones.html">Política</a></li>
+        </ul>
+        <p>© 2022 Brenda Ramírez || Todos los derechos reservados</p>
+    </footer>
+    <!-- Enlace de script para hacer uso de los iconos de redes sociales -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

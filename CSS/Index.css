@@ -1,0 +1,505 @@
+/* Autor: Brenda Marina Ramirez Macias
+Universidad Autonoma de Aguascalientes
+Carrera: Lic. Informatica y tecnologias Computacionales */
+
+/* Estilos a todas las paginas */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Se asignaron colores a variables para mantener 
+los mismos colores durante todo el proyecto.
+Se hizo uso de la paleta de colores 
+https://www.color-hex.com/color-palette/4666*/
+:root{
+    background: #b2d8d8;
+    --secundary:	#f1f5f5;
+    --tertiary: #66b2b2;
+    --black-text: #080808;
+    --white-text: #ebf3f3;
+    --button-hover:	#008080;
+}
+/* Asignacion de tipo de letra para la parte del
+cuerpo de las paginas */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* BARRA DE NAVEGACION */
+/* Diseno para asignar color, tamano, fondo, 
+forma de presentacion, ancho y justificacion de elementos */
+.nav{
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: var(--tertiary);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    position: center;
+    z-index: 10;
+}
+/* En la misma barra de navegacion pero el la segunda fila
+se muestran las opciones de iniciar sesion y buscar,
+mismas que conservan el diseno del bloque anterior */
+.filad{
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: var(--tertiary);
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    justify-content:end;
+    padding-top: 20px;
+    position: center;
+    z-index: 10; 
+}
+/* Diseno para el header h1 con clase "encabezado" */
+.encabezado h1{
+    color: var(--white-text);
+    font-size: 2rem;
+    letter-spacing: .7rem; /* Espacio entre letra y letra */
+    padding-top: 10px;
+}
+/* Diseno para botones
+se muestran de un color mas oscuro para indicar que se trata 
+de una opcion importante */
+#boton{
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.2s;
+    background-color: var(--button-hover);
+    border-radius: 1rem;
+    margin-right: 30px;
+}
+/* Cuando se acerca el puntero al boton
+se torna de un color diferente, esto con el fin
+de mostrar lo que se esta apuntando */
+#boton:hover{
+    background: #006666;
+    transition: all .3s;
+    border-bottom: solid .2rem var(--secundary);
+    border-radius: 1rem;
+}
+/* Elementos ul de la barra de navegacion
+se despliegan de forma horizontal */
+.nav ul{
+    display: flex;
+}
+/* Borde a la derecha de cada elemento
+que ayuda a diferenciar las opciones
+del menu de navegacion */
+.nav ul li{
+    border-right: 1px solid rgb(208, 247, 247);
+    height: 40px; /* tamano de la linea vertical */
+}
+/* La ultima opcion de la barra de navegacion
+se muestra sin la linea vertical, disenada en 
+el bloque anterio */
+.nav ul li:last-child{
+    border-right: none;
+}
+/* Diseno para las opciones de la 
+barra de navegacion */
+.nav ul li a{
+    color: var(--white-text);
+    font-size: 1.2 rem;
+    padding: .8rem 1rem;
+    text-transform: uppercase;/* Pasan de minusculas a mayusculas */
+}
+/* Cuando se quiere seleccionar una opcion, 
+se acerca el puntero y el color se vuelve mas oscuro */
+.nav ul li a:hover{
+    background-color: var(--button-hover);
+    transition: all .3s;
+    border-bottom: solid .2rem var(--secundary);
+    border-radius: 0.3rem;
+    text-decoration: none;
+}
+/* Diseno para responsividad, 
+cuando la pantalla se hace mas pequena, 
+se muestra el icono hamburguesa
+que permite desplegar el menu */
+.drawer{
+    font-size: 1rem;
+    color: var(--white-text);
+    float: left;
+    cursor: pointer;
+    display: none;
+    margin-left: 1rem;
+    border: solid 1.5px var(--white-text);
+    padding: .2rem;
+    border-radius: .1rem;
+}
+#ckbox{
+    display: none;
+}
+#carouselExampleIndicators{
+ z-index: 5;
+}
+/* Posicion de la opcion de buscar */
+.buscar {
+    position: relative;
+    padding: 5px;
+  }
+/* Diseno para el espacio de insercion para la 
+busqueda
+ */
+.buscar input {
+    width: 0;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #222;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+    z-index: 10;
+    margin-right: 15px;
+}
+/* Diseno para boton con lupa,
+este boton ayuda al usuario a buscar informacion especifica */
+.boton1 {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: var(--button-hover);
+    text-align: center;
+    color:var(--white-text);
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 15px;
+}  
+/* Se despliega la opcion de el input de
+buscar y se hace mas ancho */
+.buscar:hover input {
+    width: 240px;
+}
+.buscar input:focus {
+    width: 240px;
+}
+/* Ayuda a alinear el contenido y subtitulos de la pagina
+deja un espacio en los costados y los deja centrados */
+.promociones{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    position: center;
+}
+/* Diseno de redondeo a las orillas de los 
+videos insertados */
+.video{
+    border-radius: 20%;
+}
+/* Cuando se va a seleccionar una opcion con video
+se hace un poco mas grande, para indicar que es el 
+que se esta seleccionando */
+.video:hover{
+ scale: 1.03;
+}
+/* Color de fondo para la pagina de Promociones */
+.envio{
+    background-color: var(--secundary);
+}
+/* Ayuda a centrar o dejar un espacio en los costados de la pagina
+para que la informacion se vea presentable */
+.politicas{
+    width: 80%;
+    margin-left: 10%;
+    align-content: center;
+    margin-right: 1em;
+    color:var(--button-hover);
+}
+/* Seccion de novedades con un ancho del 60%
+de la pagina principal, alineado al centro */
+.novedades{
+    width: 60%;
+    background-color:var(--tertiary);
+    text-align: center;
+    color: var(--white-text);
+}
+/* Espacio de tarjetas para mostrar los libros mas sobresalientes */
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+/* Titulos para las tarjetas */
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #7a7a7a;
+}
+/* Diseno para las tarjetas con los libros sobresalientes */
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);/* Agrega una sombra a la tarjeta */
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+/* Al seleccionar una tarjeta se muestra
+una sombra mas sobresaliente y se mueve de posicion */
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);/* Movimiento de tarjeta */
+}
+/* Imagen del libro centrada y con espacio al rededor
+para mostrar un efecto centrado */
+.card img{
+	width: 100%;
+	height: 230px;
+    align-items: center;
+    padding: 40px;
+}
+/* Contenido de las tarjetas */
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+/* Titulo de las tarjetas */
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+}
+/* Parrafo de las cartas
+se muestra de color azul el nombre del autor */
+.card .contenido-card p{
+	line-height: 1.8;
+	color: var(--button-hover);
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+/* Diseno para boton encontrado en la parte inferior
+de la tarjeta */
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: var(--white-text);
+	border: 1px solid var(--button-hover);
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+    background-color:var(--button-hover);
+}
+/* Cuando se acerca el puntero al boton, se torna de
+un color mas oscuro */
+.card .contenido-card a:hover{
+	background: #004c4c;
+	color: #fff;
+}
+/* En la pagina de ubicaciones se muestra el  */
+.ubicaciones{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: var(--button-hover);
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px; 
+    justify-content: space-around ;
+}
+/* Estilos para acomodar los mapas en una fila
+uno despues del otro */
+.location{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;  
+    align-content: center;
+    justify-content: space-around;
+    padding: auto;
+}
+/* Alineacion del mapa Google Maps
+al centro */
+.mapa{
+    text-align: center;
+}
+.direccion{
+    display: flex;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.imagenes{
+    border-radius: 20%;
+    text-align: center;
+}
+/* footer */
+footer{
+    position: relative;
+    width: 100%;
+    background: var(--button-hover);
+    min-height: 100px;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* Estilo para las clases social_icon y menu */
+footer .social_icon,
+footer .menu
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;/* Los elementos hijos son obligados a permanecer en la misma fila */
+}
+footer .social_icon li,
+footer .menu li{
+    list-style: none;
+}
+/* Estilo para opciones de navegacion */
+footer .social_icon li a{
+    font-size: 2em;
+    color: var(--white-text);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+/* Al acercar el cursor a las opciones
+se torna de un color mas oscuro */
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+}
+footer .menu li a{
+    font-size: 1.2em;
+    color: var(--white-text);
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+}
+footer .menu li a:hover{
+    opacity: 1;
+}
+/* Parrafos del mismo estilo */
+footer p{
+    color: var(--white-text);
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+footer .wave{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-size: 1000px 100px;
+}
+/* Tarjetas para listas de libros 
+La diferencia entre estas tarjetas y las de la pagina 
+principal es simplemente el tamano y posicion de la portada del libro*/
+.contenedor-tarjeta{
+	width: 90%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+.titulo-tarjeta{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #7a7a7a;
+    font-size: 10px;
+}
+/* Estilo para tarjeta */
+.tarjeta{
+	width: 80%;
+    height: 50%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+/* Sobreado al seleccionar la tarjeta */
+.tarjeta:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+/* Tamano de la portada del libro */
+.tarjeta img{
+	width: 100%;
+	height: 210px;
+}
+.tarjeta .contenido-tarjeta{
+	padding: 15px;
+	text-align: center;
+}
+.tarjeta .contenido-tarjeta h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+    font-size: 20px;
+}
+.tarjeta .contenido-tarjeta p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+/* Estlo para la informacion basica de los libros */
+.tarjeta .contenido-tarjeta a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: var(--white-text);
+	border: 1px solid var(--button-hover);
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+    background-color:var(--button-hover);
+}
+.tarjeta .contenido-tarjeta a:hover{
+	background: #004c4c;
+	color: #fff;
+}
+/* Responsividad de las tarjetas al hacer mas pequena la pagina */
+@media only screen and (min-width:320px) and (max-width:768px){
+	.contenedor-tarjeta{
+		flex-wrap: wrap;
+	}
+	.tarjeta{
+		margin: 15px;
+	}
+}

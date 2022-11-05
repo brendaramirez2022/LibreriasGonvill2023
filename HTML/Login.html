@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librerías</title>
+    <!--Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="../CSS/Index.css">
+    <link rel="stylesheet" href="../CSS/Index.css">
+    <!--Enlace a la hoja de estilos exclusivamente para el login -->
+    <link rel="stylesheet" href="../CSS/Login.css">
+    <!-- Enlace de boostrap para que el carrusel funcione-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <!-- Enlace para poner iconos de la pagina font awesome
+    https://fontawesome.com/v4/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Enlace de script para usar sweet alert o ventanas emergentes predisenadas
+    https://sweetalert.js.org/guides/ -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Enlace al script para usar funciones de validacion -->
+    <script src="./JS/Login.js"></script>
+</head>
+<body>
+
+    <div class="encabezado">
+        <div class="nav">
+          <!-- Bloque que ayuda a la responsividad
+            cuando la pantalla se reduce, cambia el manu 
+          a un cuadrado con barras -->
+            <h1>Librerías <br>   Gonvill<br></h1>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <!-- Primera fila de la Barra de navegacion
+            se usan iconos referentes a la opcion
+          se puede cambiar buscando un icono en font-awesome -->
+            <ul class="menu-box">
+                <li><a href="../index.html" class="fa fa-home"> Inicio</a></li>
+                <li><a href="Libros.html" class="fa fa-book"> Libros</a></li>
+                <li><a href="LibrosElectronicos.html" class="fa fa-laptop"> Libros electrónicos</a></li>
+                <li><a href="AudioLibros.html" class="fa fa-headphones"> Audio libros</a></li>
+                <li><a href="Descuentos.html" class="fa fa-list-alt"> Descuentos</a></li>
+                <li><a href="Ubicaciones.html" class="fa fa-map-marker"> Ubicaciones</a></li>                                
+            </ul>     
+        </div>        
+    </div>
+    <div class="filad">
+            <!-- Segunda fila de la Barra de navegacion
+            se encuentra el boton de iniciar sesion y 
+            y el boton para buscar -->
+        <a href="Login.html" class="fa fa-sign-in" id="boton">  INICIAR SESIÓN </a> 
+        <div class="buscar">
+            <input type="text" placeholder="BUSCAR" required />         
+            <div class="boton1">
+              <i class="fa fa-search "></i>
+            </div>
+        </div>
+    </div> 
+    <!-- Formulario para pedir el correo y contrasena al usuario -->
+    <form class="formulario">
+        <h1>Login</h1>
+        <div class="contenedor">
+        <div class="input-contenedor">
+            <!-- Icono de sobre -->
+            <i class="fa fa-envelope icon" ></i>
+            <input type="email" placeholder="Correo Electrónico" id="email">
+        </div>
+        <div class="input-contenedor">
+            <!-- Icono de llave -->
+            <i class="fa fa-key icon" ></i>
+            <input type="password" id="password" placeholder="Contraseña">
+        </div>
+        <!-- Input con diseno de boton que al presionarlo
+            manda a llamar a la funcion getDataLog encontrada en el script
+            Login, la funcion recupera o atrapa los datos insertados por el usuario -->
+        <input value="Entrar" class="button" onclick="getDataLog();"> 
+        <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad</p>
+        <p>¿No tienes una cuenta? <a class="link" href="Registro.html"> Registrate </a></p>
+    </div>
+    </form>
+    <br>
+    <!-- Pie de pagina -->
+    <footer>
+        <ul class="social_icon">
+            <!-- Iconos de redes sociales mas populares, al presionarlo redirige a 
+                la cuenta de Librerias Gonvill -->
+            <li><a href="https://www.facebook.com/LibreriasGonvill"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/libreriasgonvill/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.youtube.com/user/GonvillLibros/videos"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="https://twitter.com/GonvillLibros"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <!-- Menu de navegacion inferior -->
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="Ubicaciones.html">Ubicación</a></li>
+            <li><a href="Descuentos.html">Descuentos</a></li>
+            <li><a href="Login.html">Beneficios</a></li>
+            <li><a href="Promociones.html">Política</a></li>
+        </ul>
+        <p>© 2022 Brenda Ramírez || Todos los derechos reservados</p>
+    </footer>
+    <!-- Enlace al script que contiene funciones de validacion -->
+    <script src="../JS/Login.js"></script>
+    <!-- Enlace de script para hacer uso de los iconos de redes sociales -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

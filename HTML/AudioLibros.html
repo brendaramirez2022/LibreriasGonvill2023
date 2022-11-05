@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librerías</title>
+    <!--Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="../CSS/Index.css">
+    <!-- Enlace de boostrap para que el carrusel funcione-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <!-- Enlace para poner iconos de la pagina font awesome
+    https://fontawesome.com/v4/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Enlace de script para usar sweet alert o ventanas emergentes predisenadas
+    https://sweetalert.js.org/guides/ -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Enlace al script para usar funciones de validacion -->
+    <script src="./JS/Login.js"></script>
+</head>
+<body>
+
+    <div class="encabezado">
+        <div class="nav">
+          <!-- Bloque que ayuda a la responsividad
+            cuando la pantalla se reduce, cambia el manu 
+          a un cuadrado con barras -->
+            <h1>Librerías <br>   Gonvill<br></h1>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <!-- Primera fila de la Barra de navegacion
+            se usan iconos referentes a la opcion
+          se puede cambiar buscando un icono en font-awesome -->
+            <ul class="menu-box">
+                <li><a href="../index.html" class="fa fa-home"> Inicio</a></li>
+                <li><a href="Libros.html" class="fa fa-book"> Libros</a></li>
+                <li><a href="LibrosElectronicos.html" class="fa fa-laptop"> Libros electrónicos</a></li>
+                <li><a href="AudioLibros.html" class="fa fa-headphones" style="background-color:#008080;border-bottom: solid .2rem var(--secundary);                  border-radius: 0.3rem;
+                    text-decoration: none;"> Audio libros</a></li>
+                <li><a href="Descuentos.html" class="fa fa-list-alt"> Descuentos</a></li>
+                <li><a href="Ubicaciones.html" class="fa fa-map-marker"> Ubicaciones</a></li>                                
+            </ul>     
+        </div>        
+    </div>
+    <div class="filad">
+            <!-- Segunda fila de la Barra de navegacion
+            se encuentra el boton de iniciar sesion y 
+            y el boton para buscar -->
+        <a href="Login.html" class="fa fa-sign-in" id="boton">  INICIAR SESIÓN </a> 
+        <div class="buscar">
+            <input type="text" placeholder="BUSCAR" required />         
+            <div class="boton1">
+              <i class="fa fa-search "></i>
+            </div>
+        </div>
+    </div>   
+    <!-- Titulo de seccion -->
+    <div class="politicas">
+        <hr>
+          <h2>AUDIO LIBROS </h2>
+        <hr>
+      </div>
+
+          <!-- Primera seccion -->
+          <!-- Fila 1 -->
+          <!-- Tarjetas en las que se muestran los audio libros en existencia
+              se muestra la informacion basica -->
+          <div class="contenedor-tarjeta">
+            <div class="tarjeta">
+              <figure>
+                <img src="../Img/Alibro1 (1).jpeg"> <!-- Imagen del libro -->
+              </figure>
+              <div class="contenido-tarjeta">
+                <h3>Ragdoll (Muñeco de trapo)</h3><!-- Titulo -->
+                <p>DANIEL COLE</p><!-- Autor  -->
+                <p><strong>$420</strong></p><!-- Precio -->
+                <a href="#">Comprar</a><!-- Boton de comprar -->
+              </div>
+            </div>
+    
+            <div class="tarjeta" >
+              <figure>
+                <img src="../Img/Alibro2.jpeg">
+              </figure>
+              <div class="contenido-tarjeta">
+                <h3>Un Matrimonio Perfecto</h3>
+                <p>PAUL PEN</p>
+                <br>
+                <p><strong>$399</strong></p>
+                <a href="#">Comprar</a>
+              </div>
+            </div>
+    
+            <div class="tarjeta">
+              <figure>
+                <img src="../Img/Alibro3.jpeg">
+              </figure>
+              <div class="contenido-tarjeta">
+                <h3>Cazador de Farsantes</h3>
+                <p>CRISTIAN PERFUMO</p>
+                <br>
+                <p><strong>$299</strong></p>
+                <a href="#">Comprar</a>
+              </div>
+            </div>
+            <div class="tarjeta">
+              <figure>
+                <img src="../Img/Alibro4.jpeg">
+              </figure>
+              <div class="contenido-tarjeta">
+                <h3>La Casa Entre los Cactus</h3>
+                <p>PAUL PEN</p>
+                <br>
+                <p><strong>$199</strong></p>
+                <a href="#">Comprar</a>
+              </div>
+            </div>
+            <div class="tarjeta">
+                <figure>
+                  <img src="../Img/Alibro5.jpeg">
+                </figure>
+                <div class="contenido-tarjeta">
+                  <h3>Los Enigmas del Apocalipsis</h3>
+                  <p>SOLOMON NORTHUP</p>
+                  <br>
+                  <p><strong>$229</strong></p>
+                  <a href="#">Comprar</a>
+                </div>
+              </div>
+    
+        </div>
+    
+        <!-- Fila 2 -->
+          </div>
+          <div class="contenedor-tarjeta">
+            <div class="tarjeta">
+              <figure>
+                <img src="../Img/Alibro6.jpeg">
+              </figure>
+              <div class="contenido-tarjeta">
+                <h3>La Historia de la República</h3>
+                <p>CHUMEL TORRES</p>
+                <br>
+                <p><strong>$400</strong></p>
+                <a href="#">Comprar</a>
+              </div>
+            </div>
+            <div class="tarjeta">
+              <figure>
+                <img src="../Img/Alibro7.png">
+              </figure>
+              <div class="contenido-tarjeta">
+                <h3>El Milagro de San Antonio</h3>
+                <p>VICENTE BLASCO</p>
+                <br>
+                <p><strong>$222</strong></p>
+                <a href="#">Comprar</a>
+              </div>
+            </div>
+            <!-- Tarjetas de audio libros que son gratis y es posible escucharlos
+                dando clic sore el boton Gratis  -->
+            <div class="tarjeta">
+              <figure>
+                <img src="../Img/Alibro8.png">
+              </figure>
+              <div class="contenido-tarjeta">
+                <h3>El Principito</h3>
+                <p>BLADIMIR BUGUEÑO</p>
+                <br><br>
+                <p><strong>Gratis</strong></p>
+                <!-- Link a el audio subido en Google Drive -->
+                <a href="https://drive.google.com/file/d/16szooDN8bWcC0nAEJ3oRTO_GqSunmSYa/view?usp=sharing">Escuchar</a>
+              </div>
+            </div>
+            <div class="tarjeta">
+                <figure>
+                  <img src="../Img/Alibro9.jpeg">
+                </figure>
+                <div class="contenido-tarjeta">
+                  <h3>Inteligencia Emocional</h3>
+                  <p>DANIEL GOLEMAN</p>
+                  <br>
+                  <p><strong>Gratis</strong></p>
+                  <a href="https://drive.google.com/file/d/1HUZuugcFPinBS0idTCplxJ9kbNPAFBiu/view?usp=share_link">Escuchar</a>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <figure>
+                  <img src="../Img/Alibro10.jpeg">
+                </figure>
+                <div class="contenido-tarjeta">
+                  <h3>Doce Años de Esclavitud</h3>
+                  <p>SOLOMON NORTHUP</p>
+                  <br>
+                  <p><strong>$120</strong></p>
+                  <a href="#">Comprar</a>
+                </div>
+              </div>
+    
+        </div>
+
+       <!-- Pie de pagina -->
+       <footer>
+        <ul class="social_icon">
+            <!-- Iconos de redes sociales mas populares, al presionarlo redirige a 
+                la cuenta de Librerias Gonvill -->
+            <li><a href="https://www.facebook.com/LibreriasGonvill"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/libreriasgonvill/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.youtube.com/user/GonvillLibros/videos"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="https://twitter.com/GonvillLibros"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <!-- Menu de navegacion inferior -->
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="Ubicaciones.html">Ubicación</a></li>
+            <li><a href="Descuentos.html">Descuentos</a></li>
+            <li><a href="Login.html">Beneficios</a></li>
+            <li><a href="Promociones.html">Política</a></li>
+        </ul>
+        <p>© 2022 Brenda Ramírez || Todos los derechos reservados</p>
+    </footer>
+    <!-- Enlace de script para hacer uso de los iconos de redes sociales -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

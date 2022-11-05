@@ -1,0 +1,116 @@
+/* Autor: Brenda Marina Ramirez Macias
+Universidad Autonoma de Aguascalientes
+Carrera: Lic. Informatica y tecnologias Computacionales */
+
+/* Se asignaron colores a variables para mantener 
+los mismos colores durante todo el proyecto.
+Se hizo uso de la paleta de colores 
+https://www.color-hex.com/color-palette/4666*/
+:root{
+    background: #b2d8d8;
+    --secundary:	#f1f5f5;
+    --tertiary: #66b2b2;
+    --black-text: #080808;
+    --white-text: #ebf3f3;
+    --button-hover:	#008080;
+}
+/* Se asigna a todo el cuerpo de la pagina
+un tipo de letra y fondo */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background: url(../Img/Img02.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Toda la pagina */
+*{
+    box-sizing: border-box;
+}
+/* Cuadro centrado para iniciar sesion */
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+/* Form que pide los datos basicos de 
+inicio de sesion y registro */
+.formulario{
+    background: var(--white-text);
+    margin: auto;
+    padding: 3px;
+}
+/* Estilo para titulo */
+h1{
+    text-align: center;
+    color: var(--tertiary);
+    font-size: 40px;
+}
+/* Input para los tres campos
+con el mismo ancho, sin borde y espaciado
+al rededor */
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+/* Color de fondo */
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid var(--tertiary);
+}
+/* Icono mostrado para el nombre, email y contrasena */
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+/* Estilo de boton para iniciar sesion 
+o registrarse */
+.button{
+    border: none;
+    width: 100%;
+    color: var(--white-text);
+    font-size: 20px;
+    background: var(--button-hover);
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Cuando el boton se presiona se torna de un color mas oscuro */
+.button:hover{
+    background:#006666;
+}
+p{
+    text-align: center;
+}
+/* Link para reedirigir al inicio de sesion 
+o registro */
+.link{
+    text-decoration: none;
+    color: var(--tertiary);
+    font-weight: 600;
+}
+/* Cuando se acerca el cursor
+se hace mas oscura la letra */
+.link:hover{
+    color: #006666;
+}
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
+}
+/* Responsividad en el login y registro */
+@media(min-width:768px){
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}

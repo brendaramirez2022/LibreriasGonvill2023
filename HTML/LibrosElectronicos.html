@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librerías</title>
+    <!--Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="../CSS/Index.css">
+    <!-- Enlace de boostrap para que el carrusel funcione-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <!-- Enlace para poner iconos de la pagina font awesome
+    https://fontawesome.com/v4/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Enlace de script para usar sweet alert o ventanas emergentes predisenadas
+    https://sweetalert.js.org/guides/ -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Enlace al script para usar funciones de validacion -->
+    <script src="./JS/Login.js"></script>
+</head>
+<body>
+
+    <div class="encabezado">
+        <div class="nav">
+          <!-- Bloque que ayuda a la responsividad
+            cuando la pantalla se reduce, cambia el manu 
+          a un cuadrado con barras -->
+            <h1>Librerías <br>   Gonvill<br></h1>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <!-- Primera fila de la Barra de navegacion
+            se usan iconos referentes a la opcion
+          se puede cambiar buscando un icono en font-awesome -->
+            <ul class="menu-box">
+                <li><a href="../index.html" class="fa fa-home"> Inicio</a></li>
+                <li><a href="Libros.html" class="fa fa-book"> Libros</a></li>
+                <li><a href="LibrosElectronicos.html" class="fa fa-laptop" style="background-color:#008080;border-bottom: solid .2rem var(--secundary);                  border-radius: 0.3rem;
+                  text-decoration: none;"> Libros electrónicos</a></li>
+                <li><a href="AudioLibros.html" class="fa fa-headphones" > Audio libros</a></li>
+                <li><a href="Descuentos.html" class="fa fa-list-alt"> Descuentos</a></li>
+                <li><a href="Ubicaciones.html" class="fa fa-map-marker"> Ubicaciones</a></li>                                
+            </ul>     
+        </div>        
+    </div>
+    <div class="filad">
+            <!-- Segunda fila de la Barra de navegacion
+            se encuentra el boton de iniciar sesion y 
+            y el boton para buscar -->
+        <a href="Login.html" class="fa fa-sign-in" id="boton">  INICIAR SESIÓN </a> 
+        <div class="buscar">
+            <input type="text" placeholder="BUSCAR" required />         
+            <div class="boton1">
+              <i class="fa fa-search "></i>
+            </div>
+        </div>
+    </div> 
+    <!-- Encabezado con dos lineas superior-inferior -->
+    <div class="politicas">
+        <hr>
+          <h2>LIBROS ELECTRÓNICOS</h2>
+        <hr>
+    </div>
+          <!-- Primera seccion -->
+          <!-- Fila 1 -->
+    <!-- Tarjetas que muestran los libros en existencia junto 
+    con su informacion basica -->
+          <div class="contenedor-tarjeta">
+            <div class="tarjeta">
+              <figure>
+                <img src="../Img/ebook1.jpeg">
+              </figure>
+              <div class="contenido-tarjeta">
+                <h3>Metakonsens</h3>
+                <p>RIMROCK</p>
+                <br><br>
+                <p><strong>$420</strong></p>
+                <a href="#">Comprar</a>
+              </div>
+            </div>
+    
+            <div class="tarjeta" >
+              <figure>
+                <img src="../Img/ebook2.jpeg">
+              </figure>
+              <div class="contenido-tarjeta">
+                <h3>Domata Dai Castigatori 2</h3>
+                <p>SAMANTHA COX</p>
+                <br>
+                <p><strong>$399</strong></p>
+                <a href="#">Comprar</a>
+              </div>
+            </div>
+    
+            <div class="tarjeta">
+              <figure>
+                <img src="../Img/ebook3.jpeg">
+              </figure>
+              <div class="contenido-tarjeta">
+                <h3>Das Ich Im Schatten</h3>
+                <p>KIM SINE</p>
+                <br>
+                <p><strong>$299</strong></p>
+                <a href="#">Comprar</a>
+              </div>
+            </div>
+            <div class="tarjeta">
+              <figure>
+                <img src="../Img/ebook4.jpeg">
+              </figure>
+              <div class="contenido-tarjeta">
+                <h3>Fuku Der Japanische Patient</h3>
+                <p>AMEISE</p>
+                <p><strong>$199</strong></p>
+                <a href="#">Comprar</a>
+              </div>
+            </div>
+            <div class="tarjeta">
+                <figure>
+                  <img src="../Img/ebook5.jpeg">
+                </figure>
+                <div class="contenido-tarjeta">
+                  <h3>Eine Hölle Ohne Lizenz </h3>
+                  <p>AMEISE</p>
+                  <br>
+                  <p><strong>$399</strong></p>
+                  <a href="#">Comprar</a>
+                </div>
+              </div>
+    
+        </div>
+    
+        <!-- Fila 2 -->
+          </div>
+          <div class="contenedor-tarjeta">
+            <div class="tarjeta">
+              <figure>
+                <img src="../Img/ebook6.jpeg">
+              </figure>
+              <div class="contenido-tarjeta">
+                <h3>Maryann's Heaving Thighs</h3>
+                <p>ZOE JASMINE</p>
+                <p><strong>$400</strong></p>
+                <a href="#">Comprar</a>
+              </div>
+            </div>
+            <!-- Libros gratis  -->
+            <div class="tarjeta">
+              <figure>
+                <img src="../Img/ebook7.jpeg">
+              </figure>
+              <div class="contenido-tarjeta">
+                <h3>Amor Asesinado</h3>
+                <p>EMILIA PARDO</p>
+                <br>
+                <p><strong>Gratis</strong></p>
+                <!-- Al dat clic en el boton Leer, se abre un archivo pdf
+                    El pdf fue subido a Google Drive -->
+                <a href="https://drive.google.com/file/d/1_nia7bnLc3_eYbogGayk4MSoNMBWiCbF/view?usp=share_link">Leer</a>
+              </div>
+            </div>
+            <div class="tarjeta">
+              <figure>
+                <img src="../Img/ebook8.jpeg">
+              </figure>
+              <div class="contenido-tarjeta">
+                <h3>Cuentos de Navidad</h3>
+                <p>CHARLES DICKENS</p>
+                <br>
+                <p><strong>Gratis</strong></p>
+                <a href="https://drive.google.com/file/d/1nd_5JbrV8ib-a3qt_JGkDkV82--WL0H0/view?usp=share_link">Leer</a>
+              </div>
+            </div>
+            <div class="tarjeta">
+                <figure>
+                  <img src="../Img/ebook9.jpeg">
+                </figure>
+                <div class="contenido-tarjeta">
+                  <h3>Los Cuatro Acuerdos</h3>
+                  <p>Miguel Ruiz</p>
+                  <br>
+                  <p><strong>Gratis</strong></p>
+                  <a href="https://drive.google.com/file/d/1MlQ8NgeT5GPNqpsxQ6fkYihGTIOFBt99/view?usp=share_link">Leer</a>
+                </div>
+              </div>
+              <div class="tarjeta">
+                <figure>
+                  <img src="../Img/ebook10.jpeg">
+                </figure>
+                <div class="contenido-tarjeta">
+                  <h3>Caballería Roja</h3>
+                  <p>BABEL ISSAC</p>
+                  <br>
+                  <p><strong>Gratis</strong></p>
+                  <a href="https://drive.google.com/file/d/1jF4RqzCayskVjVkTFGaKK9VEYq5Ql3Yh/view?usp=share_link">Leer</a>
+                </div>
+              </div>
+    
+        </div>
+  
+       <!-- Pie de pagina -->
+       <footer>
+        <ul class="social_icon">
+            <!-- Iconos de redes sociales mas populares, al presionarlo redirige a 
+                la cuenta de Librerias Gonvill -->
+            <li><a href="https://www.facebook.com/LibreriasGonvill"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/libreriasgonvill/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="https://www.youtube.com/user/GonvillLibros/videos"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href="https://twitter.com/GonvillLibros"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <!-- Menu de navegacion inferior -->
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="Ubicaciones.html">Ubicación</a></li>
+            <li><a href="Descuentos.html">Descuentos</a></li>
+            <li><a href="Login.html">Beneficios</a></li>
+            <li><a href="Promociones.html">Política</a></li>
+        </ul>
+        <p>© 2022 Brenda Ramírez || Todos los derechos reservados</p>
+    </footer>
+    <!-- Enlace de script para hacer uso de los iconos de redes sociales -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>
